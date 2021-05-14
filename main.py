@@ -5,7 +5,7 @@ import time
 
 d="!work"
 url="https://discord.com/api/v9/channels/833277824324468776/messages"
-key="Nzk5NTYxMDk2Nzk3MjI0OTgy.YJ6sIg.m6nFmRp1KJVCxjuZVhMXVV5pJJ4"
+key="Nzk5NTYxMDk2Nzk3MjI0OTgy.YJ60Tw.SpHg7HoRk9K7wgC29swMj_87IJU"
 
 payload={'content':d}
 header={'authorization':key}
