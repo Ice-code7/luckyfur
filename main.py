@@ -3,9 +3,9 @@ import environ
 from datetime import datetime, timedelta
 import time
 
-d=environ('d')
-url=environ('url')
-key=environ('key')
+d=environ['d']
+url=environ['url']
+key=environ['key']
 
 payload={'content':d}
 header={'authorization':key}
