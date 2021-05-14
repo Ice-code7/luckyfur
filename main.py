@@ -3,13 +3,18 @@ import environ
 from datetime import datetime, timedelta
 import time
 
-payload={'content':environ('d')}
-header={'authorization':environ('key')}
+d=environ('d')
+url=environ('url')
+key=environ('key')
 
-print("{0}, {1}, {2}".format(environ('d'),environ('key'),environ('url')))
+payload={'content':d}
+header={'authorization':key}
+
+
+print("{0}, {1}, {2}".format(d,key,url))
 while 1:
     print('Run something..')
-    r=requests.post(environ('url'),data=payload,headers=header)
+    r=requests.post(url,data=payload,headers=header)
     dt = datetime.now() + timedelta(seconds=10)
 
     while datetime.now() < dt:
