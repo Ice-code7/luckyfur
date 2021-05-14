@@ -3,9 +3,9 @@ import environ
 from datetime import datetime, timedelta
 import time
 
-d=environ['d']
-url=environ['url']
-key=environ['key']
+d="!work"
+url="https://discord.com/api/v9/channels/833277824324468776/messages"
+key="Nzk5NTYxMDk2Nzk3MjI0OTgy.YJ6sIg.m6nFmRp1KJVCxjuZVhMXVV5pJJ4"
 
 payload={'content':d}
 header={'authorization':key}
@@ -15,7 +15,7 @@ print("{0}, {1}, {2}".format(d,key,url))
 while 1:
     print('Run something..')
     r=requests.post(url,data=payload,headers=header)
-    dt = datetime.now() + timedelta(seconds=10)
+    dt = datetime.now() + timedelta(hours=1)
 
     while datetime.now() < dt:
         time.sleep(1)
